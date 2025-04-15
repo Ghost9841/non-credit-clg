@@ -1,0 +1,26 @@
+/* Simple Font Awesome replacement */
+.fas, .far, .fab {
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Icons */
+.fa-bars:before { content: "☰"; }
+.fa-times:before { content: "✕"; }
+.fa-globe:before { content: "🌐"; }
+.fa-heartbeat:before { content: "♥"; }
+.fa-user-circle:before { content: "👤"; }
+.fa-search:before { content: "🔍"; }
+.fa-clock:before { content: "🕒"; }
+.fa-comment:before { content: "💬"; }
+.fa-arrow-up:before { content: "↑"; }
+.fa-arrow-down:before { content: "↓"; }
+.fa-facebook-f:before { content: "f"; }
+.fa-twitter:before { content: "t"; }
+.fa-instagram:before { content: "i"; }
+.fa-youtube:before { content: "y"; }

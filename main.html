@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Khabar - News Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="fontawesome.css">
+</head>
+<body>
+    <!-- News Alert Popup -->
+    <div class="news-alert" id="news-alert">
+        <div class="alert-content">
+            <div class="alert-header">
+                <h3>Today's Breaking News</h3>
+                <span class="alert-close" id="alert-close">&times;</span>
+            </div>
+            <div class="alert-body">
+                <img src="https://images.pexels.com/photos/518543/pexels-photo-518543.jpeg" alt="Breaking News" class="alert-img">
+                <h4>Parliament Passes New Budget Bill</h4>
+                <p>The parliament has passed the new budget bill with a majority vote after 12 hours of debate...</p>
+                <button class="shimmer-btn">Read Full Story</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <a href="/">
+                    <img src="https://imgs.search.brave.com/XtzGxKb7FKTUXOTtLr_ezSBa3RU_1kpiNIBo6LUB0LU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/b25saW5la2hhYmFy/LmNvbS93cC1jb250/ZW50L3RoZW1lcy9v/bmxpbmVraGFiYXIt/MjAyMS9pbWcvb2st/aWNvbi5wbmc" alt="Online Khabar" class="logo"> Online Khabar
+                </a>
+                <span class="date" id="current-date">June 12, 2024, Saturday</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-items" id="nav-menu">
+                <li><a href="#" class="shine-border">Homepage</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Lifestyle</a></li>
+                <li><a href="#">Entertainment</a></li>
+                <li><a href="#">Opinion</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="#" class="nav-btn">Nepal</a>
+                <a href="#" class="nav-btn"><i class="fas fa-globe"></i> Center Monitor</a>
+                <a href="#" class="nav-btn"><i class="fas fa-heartbeat"></i> Health</a>
+                <a href="#" class="lang-btn">EN</a>
+                <a href="#" class="user-btn"><i class="fas fa-user-circle"></i></a>
+                <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breaking News Marquee -->
+    <div class="breaking-news-container">
+        <div class="breaking-label">Breaking News</div>
+        <div class="marquee-container">
+            <div class="marquee" id="news-marquee">
+                <span>COVID-19: Health Ministry announces new vaccination drive starting next week</span>
+                <span>Finance Minister unveils economic recovery plan amid global inflation concerns</span>
+                <span>National cricket team qualifies for Asia Cup after historic win</span>
+                <span>Supreme Court issues landmark ruling on environmental protection case</span>
+                <span>Prime Minister to address the nation tonight at 8 PM</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Author Section -->
+    <div class="authors-section">
+        <div class="container">
+            <div class="authors">
+                <a href="#" class="author">
+                    <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Author" class="author-img">
+                    <span>Dipesh</span>
+                </a>
+                <a href="#" class="author">
+                    <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Author" class="author-img">
+                    <span>Surya Prasai</span>
+                </a>
+                <a href="#" class="author">
+                    <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Author" class="author-img">
+                    <span>Nepal Bhatti</span>
+                </a>
+                <a href="#" class="author">
+                    <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Author" class="author-img">
+                    <span>Arunav</span>
+                </a>
+                <a href="#" class="author">
+                    <img src="https://randomuser.me/api/portraits/men/5.jpg" alt="Author" class="author-img">
+                    <span>Ram Lamichhane</span>
+                </a>
+                <a href="#" class="author">
+                    <img src="https://randomuser.me/api/portraits/men/6.jpg" alt="Author" class="author-img">
+                    <span>Kiran Bhatti Office Time</span>
+                </a>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Search Keywords" class="search-input" id="search-input">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel-container">
+        <div class="carousel" id="news-carousel">
+            <div class="carousel-track" id="carousel-track">
+                <div class="carousel-slide">
+                    <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg" alt="Business Meeting">
+                    <div class="carousel-caption">
+                        <h3>Economic Summit Begins Today</h3>
+                        <p>Leaders from across the region gather to discuss economic cooperation</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg" alt="Tech Conference">
+                    <div class="carousel-caption">
+                        <h3>Tech Innovation Conference</h3>
+                        <p>Latest technologies and innovations showcased at annual tech conference</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg" alt="Sports Event">
+                    <div class="carousel-caption">
+                        <h3>National Sports Championship</h3>
+                        <p>Athletes from across the country compete in the national championship</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://images.pexels.com/photos/2608517/pexels-photo-2608517.jpeg" alt="Cultural Festival">
+                    <div class="carousel-caption">
+                        <h3>Annual Cultural Festival</h3>
+                        <p>Celebrating the rich cultural heritage with music, dance and art</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn prev" id="carousel-prev">&#10094;</button>
+            <button class="carousel-btn next" id="carousel-next">&#10095;</button>
+            <div class="carousel-dots" id="carousel-dots"></div>
+        </div>
+    </div>
+    <!-- Stock Ticker -->
+    <div class="stock-ticker">
+        <div class="container">
+            <div class="trending">
+                <span>Trending...</span>
+            </div>
+            <div class="stock-items" id="stock-ticker">
+                <div class="stock-item">
+                    <div class="stock-name">Narayani Develo...</div>
+                    <div class="stock-symbol">NABBC</div>
+                    <div class="stock-price">1,777.71</div>
+                    <div class="stock-change negative">-2.00% -36.32</div>
+                </div>
+                <div class="stock-item">
+                    <div class="stock-name">Mailung Khola Ja...</div>
+                    <div class="stock-symbol">MKJC</div>
+                    <div class="stock-price">580.77</div>
+                    <div class="stock-change positive">+3.85% +21.52</div>
+                </div>
+                <div class="stock-item">
+                    <div class="stock-name">United Modi Hyd...</div>
+                    <div class="stock-symbol">UMHL</div>
+                    <div class="stock-price">460.15</div>
+                    <div class="stock-change positive">+2.09% +9.44</div>
+                </div>
+                <div class="stock-item">
+                    <div class="stock-name">Ngadi Group Po...</div>
+                    <div class="stock-symbol">NGPL</div>
+                    <div class="stock-price">288.55</div>
+                    <div class="stock-change positive">+5.22% +14.32</div>
+                </div>
+                <div class="stock-item">
+                    <div class="stock-name">Sindhu Bikash B...</div>
+                    <div class="stock-symbol">SINDU</div>
+                    <div class="stock-price">1,200.80</div>
+                    <div class="stock-change positive">+7.98% +88.71</div>
+                </div>
+            </div>
+            <div class="view-stock">
+                <a href="#" class="shimmer-btn">View Stock Live</a>
+                <span class="market-status" id="market-status">Market Closed</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured News Carousel -->
+
+    <!-- IPL Match Section -->
+    <div class="ipl-section">
+        <div class="container">
+            <div class="match-container">
+                <div class="ipl-logo">
+                </div>
+                <div class="team team-left">
+                    <div class="team-name">Chennai Super Kings</div>
+                    <div class="team-score">103/9 (20.0)</div>
+                </div>
+                <div class="vs">VS</div>
+                <div class="team team-right">
+                    <div class="team-name">Kolkata Knight Riders</div>
+                    <div class="team-score">107/3 (10.1)</div>
+                </div>
+                <div class="match-result">
+                    <div class="result-text">Kolkata Knight Riders won by 6 wickets</div>
+                    <a href="#" class="results-btn shimmer-btn">Results</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container main-container">
+            <div class="content-area">
+                <article class="featured-article">
+                    <h1 class="article-title">Around the Reservoir (Photo Feature)</h1>
+                    <div class="article-meta">
+                        <div class="article-author">
+                            <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Author" class="author-img">
+                            <span>Shankar Giri</span>
+                        </div>
+                        <div class="article-time">
+                            <i class="far fa-clock"></i> 2 hours ago
+                        </div>
+                        <div class="article-comments">
+                            <i class="far fa-comment"></i> <span id="comment-count">0</span>
+                        </div>
+                    </div>
+                    <div class="article-image">
+                        <img src="https://images.pexels.com/photos/2132126/pexels-photo-2132126.jpeg" alt="Lake and Mountains" class="featured-img">
+                    </div>
+                    <!-- Article content would go here -->
+                    <div class="article-content">
+                        <p>The serene beauty of the reservoir nestled between majestic mountains provides a breathtaking view. This photo feature captures the tranquility and natural splendor of one of Nepal's hidden gems.</p>
+                        
+                        <p>As the morning mist lifts from the water's surface, the surrounding hills reveal their lush greenery. Local fishermen start their day early, casting nets in hopes of a good catch. The reservoir not only serves as a source of livelihood but also as a recreational area for visitors.</p>
+                        
+                        <div class="article-gallery">
+                            <img src="https://images.pexels.com/photos/2469122/pexels-photo-2469122.jpeg" alt="Reservoir view" class="gallery-img" onclick="openLightbox(this.src)">
+                            <img src="https://images.pexels.com/photos/1586298/pexels-photo-1586298.jpeg" alt="Mountain lake" class="gallery-img" onclick="openLightbox(this.src)">
+                            <img src="https://images.pexels.com/photos/158063/bellingrath-gardens-alabama-landscape-scenic-158063.jpeg" alt="Lakeside view" class="gallery-img" onclick="openLightbox(this.src)">
+                        </div>
+                        
+                        <p>The area surrounding the reservoir has become a biodiversity hotspot, with numerous species of birds making it their home. Environmental conservationists are working with local communities to preserve this pristine ecosystem.</p>
+                    </div>
+                </article>
+                
+                <!-- Related News Section -->
+                <div class="related-news">
+                    <h2 class="section-title">Related News</h2>
+                    <div class="news-grid" id="related-news">
+                        <div class="news-card">
+                            <img src="https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg" alt="News image" class="news-img">
+                            <div class="news-content">
+                                <h3 class="news-title">Government Announces New Conservation Areas</h3>
+                                <div class="news-meta">
+                                    <span><i class="far fa-clock"></i> 1 day ago</span>
+                                    <span><i class="far fa-comment"></i> 5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-card">
+                            <img src="https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg" alt="News image" class="news-img">
+                            <div class="news-content">
+                                <h3 class="news-title">Tourism Board Promotes Eco-friendly Destinations</h3>
+                                <div class="news-meta">
+                                    <span><i class="far fa-clock"></i> 3 days ago</span>
+                                    <span><i class="far fa-comment"></i> 12</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-card">
+                            <img src="https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg" alt="News image" class="news-img">
+                            <div class="news-content">
+                                <h3 class="news-title">Local Community Leads Cleanup Initiative</h3>
+                                <div class="news-meta">
+                                    <span><i class="far fa-clock"></i> 5 days ago</span>
+                                    <span><i class="far fa-comment"></i> 8</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <!-- Tweet Cards -->
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Latest Tweets</h3>
+                    <div class="tweet-cards">
+                        <div class="tweet-card">
+                            <div class="tweet-header">
+                                <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="Profile" class="tweet-profile">
+                                <div class="tweet-user">
+                                    <div class="tweet-name">Nepal Tourism Board</div>
+                                    <div class="tweet-handle">@NepalTourism</div>
+                                </div>
+                                <div class="tweet-icon"><i class="fab fa-twitter"></i></div>
+                            </div>
+                            <div class="tweet-content">
+                                Experience the breathtaking beauty of Nepal's mountains this summer! Our new tourism campaign launches today. #VisitNepal #Himalayas
+                            </div>
+                            <div class="tweet-media">
+                                <img src="https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg" alt="Nepal Mountains">
+                            </div>
+                            <div class="tweet-footer">
+                                <span><i class="far fa-heart"></i> 245</span>
+                                <span><i class="far fa-comment"></i> 32</span>
+                                <span><i class="fas fa-retweet"></i> 78</span>
+                                <span class="tweet-time">2h ago</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tweet-card">
+                            <div class="tweet-header">
+                                <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Profile" class="tweet-profile">
+                                <div class="tweet-user">
+                                    <div class="tweet-name">Ministry of Health</div>
+                                    <div class="tweet-handle">@HealthMinistry</div>
+                                </div>
+                                <div class="tweet-icon"><i class="fab fa-twitter"></i></div>
+                            </div>
+                            <div class="tweet-content">
+                                New vaccination centers opening tomorrow in Kathmandu, Pokhara, and Biratnagar. Check our website for details and registration. #PublicHealth #COVID19
+                            </div>
+                            <div class="tweet-footer">
+                                <span><i class="far fa-heart"></i> 189</span>
+                                <span><i class="far fa-comment"></i> 45</span>
+                                <span><i class="fas fa-retweet"></i> 112</span>
+                                <span class="tweet-time">5h ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Icon Cloud -->
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Trending Topics</h3>
+                    <div class="icon-cloud">
+                        <span class="cloud-item size-lg"><i class="fas fa-virus"></i> COVID-19</span>
+                        <span class="cloud-item size-md"><i class="fas fa-landmark"></i> Politics</span>
+                        <span class="cloud-item size-sm"><i class="fas fa-futbol"></i> Sports</span>
+                        <span class="cloud-item size-lg"><i class="fas fa-mountain"></i> Tourism</span>
+                        <span class="cloud-item size-md"><i class="fas fa-chart-line"></i> Economy</span>
+                        <span class="cloud-item size-sm"><i class="fas fa-film"></i> Entertainment</span>
+                        <span class="cloud-item size-md"><i class="fas fa-graduation-cap"></i> Education</span>
+                        <span class="cloud-item size-lg"><i class="fas fa-heartbeat"></i> Health</span>
+                        <span class="cloud-item size-sm"><i class="fas fa-tractor"></i> Agriculture</span>
+                        <span class="cloud-item size-md"><i class="fas fa-globe-asia"></i> World</span>
+                    </div>
+                </div>
+                
+                <!-- Newsletter -->
+                <div class="sidebar-section shine-border">
+                    <h3 class="sidebar-title">Subscribe to Newsletter</h3>
+                    <form class="sidebar-form" id="sidebar-newsletter">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit" class="shimmer-btn">Subscribe</button>
+                    </form>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <img id="lightbox-img" src="/placeholder.svg" alt="Lightbox Image">
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="https://imgs.search.brave.com/XtzGxKb7FKTUXOTtLr_ezSBa3RU_1kpiNIBo6LUB0LU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/b25saW5la2hhYmFy/LmNvbS93cC1jb250/ZW50L3RoZW1lcy9v/bmxpbmVraGFiYXIt/MjAyMS9pbWcvb2st/aWNvbi5wbmc" alt="Online Khabar" class="logo"> Online Khabar
+
+                    <p>Your trusted source of news and information</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h3 class="footer-title">Categories</h3>
+                        <ul class="footer-menu">
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Business</a></li>
+                            <li><a href="#">Entertainment</a></li>
+                            <li><a href="#">Lifestyle</a></li>
+                            <li><a href="#">Sports</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3 class="footer-title">Company</h3>
+                        <ul class="footer-menu">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3 class="footer-title">Connect</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        </div>
+                        <div class="newsletter">
+                            <h4>Subscribe to Newsletter</h4>
+                            <form class="newsletter-form" id="newsletter-form">
+                                <input type="email" placeholder="Your Email" class="newsletter-input" id="newsletter-email" required>
+                                <button type="submit" class="newsletter-btn shimmer-btn">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© <span id="current-year">2024</span> Online Khabar. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
